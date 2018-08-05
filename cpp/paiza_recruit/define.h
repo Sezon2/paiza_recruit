@@ -9,6 +9,7 @@
 //#define ENABLE_PAIZA_RECRUIT_BACKUP //過去に解答したコードを有効化
 #ifdef ENABLE_PAIZA_RECRUIT_BACKUP
 //	#define ENABLE_PAIZA_LESSON_D000 //「D000:掛け算」のコードを有効化。
+//	#define ENABLE_PAIZA_LESSON_D001 //「D001:足し算」のコードを有効化。
 //--------------------------------------------------------------------------------
 //	#define ENABLE_PAIZA_RECRUIT_D007 //「D007:N倍の文字列」のコードを有効化。
 //	#define ENABLE_PAIZA_RECRUIT_D089 //「D089:数字の取得」のコードを有効化。

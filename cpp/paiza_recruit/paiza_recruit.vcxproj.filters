@@ -11,6 +11,9 @@
     <ClInclude Include="backup\sample\question_d000.hpp">
       <Filter>backup\sample</Filter>
     </ClInclude>
+    <ClInclude Include="backup\sample\question_d001.hpp">
+      <Filter>backup\sample</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="paiza_recruit.cpp" />

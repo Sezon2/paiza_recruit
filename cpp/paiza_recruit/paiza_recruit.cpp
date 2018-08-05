@@ -11,24 +11,30 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <vector>
+#include <algorithm>
 
 int main(void){
 	// 自分の得意な言語で
 	// スキルチェックの基本となる、標準入力で値を取得し、
 	// 出力するコードを書いてみよう！
 
-	uint8_t           Result = 0;	//処理結果
-	std::string       Input1;		//入力された値[1個目]
-	std::stringstream InputStream1;	//入力された値の文字列ストリーム[1個目]
-	std::string       InputParts1;	//入力された値の一部[1個目]※区切り文字で取得した物。
+	std::vector<uint16_t> Result;//処理結果
+	uint16_t              Input1;//入力された値[1個目]
+	uint16_t              Input2;//入力された値[2個目]
 
-	std::getline(std::cin,Input1);//ユーザー入力
-	InputStream1 << Input1;//入力された内容を文字列ストリームへ追加。
+	std::cin >> Input1;//ユーザー入力
 
-	std::getline(InputStream1,InputParts1,' '); Result += static_cast<uint8_t>( atoi(InputParts1.c_str()) );
-	std::getline(InputStream1,InputParts1,' '); Result += static_cast<uint8_t>( atoi(InputParts1.c_str()) );
+	for ( size_t i = 0 ; i < Input1 ; i++ ) {
+		std::cin >> Input2;//ユーザー入力
+		Result.push_back(Input2);
+	}
 
-	std::cout << (uint16_t)Result << std::endl;
+	std::sort(Result.begin(),Result.end());//昇順に並び替える。
+
+	for ( size_t i = 0 ; i < Result.size() ; i++ ) {
+		std::cout << Result[i] << std::endl;
+	}
 
 	return 0;
 }

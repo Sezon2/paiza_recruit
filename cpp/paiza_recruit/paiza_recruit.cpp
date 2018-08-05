@@ -16,18 +16,14 @@ int main(void){
 	// スキルチェックの基本となる、標準入力で値を取得し、
 	// 出力するコードを書いてみよう！
 
-	std::string Result;//処理結果
-	std::string Input; //入力された値
+//	std::string Result;//処理結果
+	uint16_t    Input1;//入力された値[1個目]
+	uint16_t    Input2;//入力された値[2個目]
 
-	std::cin >> Input;
+	std::cin >> Input1;
+	std::cin >> Input2;
 
-	for ( size_t i = 0 ; i < Input.size() ; i++ ) {
-		if ( Input[i] != '0' && Input[i] != '1' && Input[i] != '2' && Input[i] != '3' && Input[i] != '4' && Input[i] != '5'
-		&&   Input[i] != '6' && Input[i] != '7' && Input[i] != '8' && Input[i] != '9' ) { break; }
-		Result += Input[i];
-	}
-
-	std::cout << Result << std::endl;
+	std::cout << (Input1 * Input2) << std::endl;
 
 	return 0;
 }

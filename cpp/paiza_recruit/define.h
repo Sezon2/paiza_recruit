@@ -10,6 +10,8 @@
 #ifdef ENABLE_PAIZA_RECRUIT_BACKUP
 //	#define ENABLE_PAIZA_RECRUIT_D007 //「D007:N倍の文字列」のコードを有効化。
 //	#define ENABLE_PAIZA_RECRUIT_D089 //「D089:数字の取得」のコードを有効化。
+//--------------------------------------------------------------------------------
+//	#define ENABLE_PAIZA_LESSON_D000 //「D000:掛け算」のコードを有効化。
 #endif // ENABLE_PAIZA_RECRUIT_BACKUP
 
 #endif//PR_INCLUDE_20180805_5LW3P5LV2FRY

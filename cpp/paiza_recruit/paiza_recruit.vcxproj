@@ -158,9 +158,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="backup\rankup\question_d007.hpp" />
     <ClInclude Include="backup\rankup\question_d089.hpp" />
     <ClInclude Include="backup\sample\question_d000.hpp" />

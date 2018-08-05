@@ -20,6 +20,9 @@
     <ClInclude Include="backup\rankup\question_d022.hpp">
       <Filter>backup\rankup</Filter>
     </ClInclude>
+    <ClInclude Include="backup\rankup\question_c016.hpp">
+      <Filter>backup\rankup</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="paiza_recruit.cpp" />

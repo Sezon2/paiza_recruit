@@ -19,12 +19,23 @@ int main(void){
 	// スキルチェックの基本となる、標準入力で値を取得し、
 	// 出力するコードを書いてみよう！
 
-//	std::vector<uint16_t> Result;//処理結果
-	uint16_t              Input1;//入力された値[1個目]
+	std::string Result;//処理結果
+	std::string Input1;//入力された値[1個目]
 
 	std::cin >> Input1;//ユーザー入力
 	
-	std::cout << (Input1 * Input1 * 6) << std::endl;
+	for ( size_t i = 0 ; i < Input1.size() ; i++ ) {
+		if ( Input1[i] == 'A' ) { Result += "4";       }else
+		if ( Input1[i] == 'E' ) { Result += "3";       }else
+		if ( Input1[i] == 'G' ) { Result += "6";       }else
+		if ( Input1[i] == 'I' ) { Result += "1";       }else
+		if ( Input1[i] == 'O' ) { Result += "0";       }else
+		if ( Input1[i] == 'S' ) { Result += "5";       }else
+		if ( Input1[i] == 'Z' ) { Result += "2";       }else
+		                        { Result += Input1[i]; }
+	}
+
+	std::cout << Result << std::endl;
 
 	return 0;
 }

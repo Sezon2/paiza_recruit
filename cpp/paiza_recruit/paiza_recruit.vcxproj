@@ -159,6 +159,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="backup\rankup\question_d007.hpp" />
+    <ClInclude Include="backup\rankup\question_d022.hpp" />
     <ClInclude Include="backup\rankup\question_d089.hpp" />
     <ClInclude Include="backup\sample\question_d000.hpp" />
     <ClInclude Include="backup\sample\question_d001.hpp" />

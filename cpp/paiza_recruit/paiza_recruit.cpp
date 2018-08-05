@@ -19,22 +19,12 @@ int main(void){
 	// スキルチェックの基本となる、標準入力で値を取得し、
 	// 出力するコードを書いてみよう！
 
-	std::vector<uint16_t> Result;//処理結果
+//	std::vector<uint16_t> Result;//処理結果
 	uint16_t              Input1;//入力された値[1個目]
-	uint16_t              Input2;//入力された値[2個目]
 
 	std::cin >> Input1;//ユーザー入力
-
-	for ( size_t i = 0 ; i < Input1 ; i++ ) {
-		std::cin >> Input2;//ユーザー入力
-		Result.push_back(Input2);
-	}
-
-	std::sort(Result.begin(),Result.end());//昇順に並び替える。
-
-	for ( size_t i = 0 ; i < Result.size() ; i++ ) {
-		std::cout << Result[i] << std::endl;
-	}
+	
+	std::cout << (Input1 * Input1 * 6) << std::endl;
 
 	return 0;
 }
